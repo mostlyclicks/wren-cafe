@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Wren Café — Breakfast, brunch &amp; serious coffee in Stoughton</title>
+  <meta name="description" content="A neighborhood café in downtown Stoughton, WI. House-roasted coffee, from-scratch brunch, and pastries that sell out by ten.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Figtree:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add("js")</script>
+</head>
+<body>
+
+  <header class="site-header" id="site-header">
+    <a href="index.html" class="brand" id="brand-logo">
+      <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
+        <path d="M8 26c0-8 6-13 12-13 7 0 11 5 11 10 0 2-1 4-3 4l3 6h-5l-2-5c-6 2-16 3-16-2z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+        <circle cx="26.5" cy="18.5" r="1.4" fill="currentColor"/>
+        <path d="M31 21l5-2" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+        <path d="M14 31v4M20 31v4" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+      </svg>
+      The Wren <span>Café</span>
+    </a>
+    <nav class="site-nav" id="site-nav">
+      <a href="menu.html">Menu</a>
+      <a href="index.html#home-story">Our Story</a>
+      <a href="index.html#home-visit">Hours &amp; Location</a>
+      <a href="menu.html#menu-pastry" class="nav-cta">Today's Bakes</a>
+    </nav>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Menu"><span></span><span></span></button>
+  </header>
+
+  <main>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home-hero">
+      <div class="hero-copy">
+        <p class="eyebrow reveal">Downtown Stoughton · Open daily 7am – 3pm</p>
+        <h1 class="reveal">Come for the coffee.<br>Stay because the <span class="tilt">cinnamon&nbsp;rolls</span> aren't done till nine.</h1>
+        <p class="hero-lede reveal">We're a small café with a big oven — house-roasted espresso, from-scratch
+          brunch, and a pastry case that's a genuine problem for your willpower.</p>
+        <div class="hero-actions reveal">
+          <a href="menu.html" class="btn btn-primary">See the menu</a>
+          <a href="#home-visit" class="btn btn-soft">Find us</a>
+        </div>
+      </div>
+      <div class="hero-plate reveal" aria-hidden="true">
+        <div class="plate">
+          <div class="cup">
+            <div class="steam"><i></i><i></i><i></i></div>
+            <div class="cup-body"></div>
+            <div class="saucer"></div>
+          </div>
+        </div>
+        <div class="hero-sticker">est.<br>2017</div>
+      </div>
+    </section>
+
+    <svg class="wave" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0 30 Q 180 0 360 30 T 720 30 T 1080 30 T 1440 30 V60 H0 Z" fill="var(--espresso)"/>
+    </svg>
+
+    <!-- ============ FAVORITES ============ -->
+    <section class="favorites" id="home-favorites">
+      <div class="section-head">
+        <p class="eyebrow light reveal">House favorites</p>
+        <h2 class="reveal">The ones people drive in for.</h2>
+      </div>
+      <div class="fav-grid">
+        <article class="fav-card reveal" id="fav-cinnamon-roll">
+          <span class="fav-badge">sells out</span>
+          <h3>Cardamom Cinnamon Roll</h3>
+          <p>Overnight dough, brown-butter glaze, out of the oven at 9 sharp.</p>
+          <span class="fav-price">$5.50</span>
+        </article>
+        <article class="fav-card reveal" id="fav-hash">
+          <h3>Farmhouse Hash</h3>
+          <p>Crispy potatoes, two eggs, smoked sausage, pickled onion, herb crème fraîche.</p>
+          <span class="fav-price">$14</span>
+        </article>
+        <article class="fav-card reveal" id="fav-latte">
+          <h3>Maple Oat Latte</h3>
+          <p>Double shot, oat milk, Wisconsin maple — no syrup pumps in this building.</p>
+          <span class="fav-price">$6</span>
+        </article>
+        <article class="fav-card reveal" id="fav-toast">
+          <h3>Ricotta Toast</h3>
+          <p>Sourdough from our own starter, lemon ricotta, seasonal fruit, hot honey.</p>
+          <span class="fav-price">$11</span>
+        </article>
+      </div>
+      <a href="menu.html" class="text-link light reveal">Full menu →</a>
+    </section>
+
+    <svg class="wave flip" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0 30 Q 180 0 360 30 T 720 30 T 1080 30 T 1440 30 V60 H0 Z" fill="var(--espresso)"/>
+    </svg>
+
+    <!-- ============ STORY ============ -->
+    <section class="story" id="home-story">
+      <div class="story-art reveal" aria-hidden="true">
+        <div class="story-frame">
+          <svg viewBox="0 0 200 200" class="story-wren">
+            <path d="M40 130c0-40 30-65 60-65 35 0 55 25 55 50 0 10-5 20-15 20l15 30h-25l-10-25c-30 10-80 15-80-10z" fill="var(--butter)" stroke="var(--espresso)" stroke-width="5" stroke-linejoin="round"/>
+            <circle cx="132" cy="92" r="6" fill="var(--espresso)"/>
+            <path d="M155 105l25-10" stroke="var(--espresso)" stroke-width="5" stroke-linecap="round"/>
+            <path d="M70 155v20M100 155v20" stroke="var(--espresso)" stroke-width="5" stroke-linecap="round"/>
+            <path d="M60 100c15-8 30-8 45 0" fill="none" stroke="var(--terracotta)" stroke-width="5" stroke-linecap="round"/>
+          </svg>
+        </div>
+      </div>
+      <div class="story-copy">
+        <p class="eyebrow reveal">Our story</p>
+        <h2 class="reveal">Started with a garage roaster and a stubborn sourdough starter.</h2>
+        <p class="reveal">Nora and Sam Bergstrom opened The Wren in 2017 with twelve seats and one
+          espresso machine that only worked if you talked nicely to it. Seven years on we roast
+          every bean in-house, bake every morning from four a.m., and still name the starter.
+          (It's Gerald. He's doing great.)</p>
+        <p class="reveal">Everything on the plate comes from as close as we can get it — flour from
+          Lonesome Stone mill, eggs from Miller Farm down County Road B, maple from Sam's uncle.</p>
+      </div>
+    </section>
+
+    <!-- ============ VISIT ============ -->
+    <section class="visit" id="home-visit">
+      <div class="visit-card reveal">
+        <h2>Come say hi.</h2>
+        <div class="visit-grid" id="home-hours">
+          <div>
+            <h4>Hours</h4>
+            <p>Every day · 7am – 3pm<br>Kitchen till 2:30</p>
+          </div>
+          <div>
+            <h4>Find us</h4>
+            <p id="home-address">183 Main Street<br>Stoughton, WI 53589</p>
+          </div>
+          <div>
+            <h4>Say hello</h4>
+            <p><a href="tel:+16085550196">(608) 555-0196</a><br><a href="mailto:hello@thewrencafe.com">hello@thewrencafe.com</a></p>
+          </div>
+        </div>
+        <p class="visit-note">Big group or a private event? <a href="mailto:hello@thewrencafe.com">Email us</a> — we host after-hours suppers once a month.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p id="footer-copyright">© <span id="year"></span> The Wren Café · Stoughton, WI</p>
+    <p class="footer-fine">A demonstration website by <a href="https://refreshweb.io">RefreshWeb</a>.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

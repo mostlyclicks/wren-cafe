@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu — The Wren Café</title>
+  <meta name="description" content="Breakfast, brunch, house-roasted coffee, and daily pastries at The Wren Café in Stoughton, WI.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Figtree:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add("js")</script>
+</head>
+<body>
+
+  <header class="site-header">
+    <a href="index.html" class="brand">
+      <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
+        <path d="M8 26c0-8 6-13 12-13 7 0 11 5 11 10 0 2-1 4-3 4l3 6h-5l-2-5c-6 2-16 3-16-2z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+        <circle cx="26.5" cy="18.5" r="1.4" fill="currentColor"/>
+        <path d="M31 21l5-2" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+        <path d="M14 31v4M20 31v4" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+      </svg>
+      The Wren <span>Café</span>
+    </a>
+    <nav class="site-nav" id="site-nav">
+      <a href="menu.html">Menu</a>
+      <a href="index.html#home-story">Our Story</a>
+      <a href="index.html#home-visit">Hours &amp; Location</a>
+      <a href="menu.html#menu-pastry" class="nav-cta">Today's Bakes</a>
+    </nav>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Menu"><span></span><span></span></button>
+  </header>
+
+  <main>
+    <section class="page-hero" id="menu-hero">
+      <p class="eyebrow reveal">Served daily · 7am – 2:30pm</p>
+      <h1 class="reveal">The menu.</h1>
+      <p class="reveal">Everything from scratch, most of it from neighbors. Menu shifts a little with the seasons — that's the fun part.</p>
+    </section>
+
+    <section class="menu-section" id="menu-coffee">
+      <h2 class="reveal">Coffee &amp; Drinks</h2>
+      <p class="menu-note reveal">Beans roasted in-house every Tuesday. Oat, whole, or skim — no upcharge.</p>
+      <ul class="menu-list">
+        <li class="reveal"><strong>Drip (bottomless if you're staying)</strong><span class="menu-price">$3.25</span><em>Single-origin, rotates weekly</em></li>
+        <li class="reveal"><strong>Espresso / Macchiato</strong><span class="menu-price">$3.50</span><em>Our Wren blend — chocolate, cherry, a little smoke</em></li>
+        <li class="reveal"><strong>Cappuccino / Latte</strong><span class="menu-price">$5</span><em>12oz, proper microfoam</em></li>
+        <li class="reveal"><strong>Maple Oat Latte <span class="menu-flag hot">favorite</span></strong><span class="menu-price">$6</span><em>Wisconsin maple, oat milk, double shot</em></li>
+        <li class="reveal"><strong>Chai (house-steeped)</strong><span class="menu-price">$5.50</span><em>Whole spices simmered daily, honestly spicy</em></li>
+        <li class="reveal"><strong>Hot Chocolate</strong><span class="menu-price">$4.50</span><em>Melted dark chocolate, torched marshmallow</em></li>
+      </ul>
+    </section>
+
+    <section class="menu-section" id="menu-brunch">
+      <h2 class="reveal">Brunch</h2>
+      <p class="menu-note reveal">Eggs from Miller Farm. Bread from Gerald (our starter — long story, ask us).</p>
+      <ul class="menu-list">
+        <li class="reveal"><strong>Farmhouse Hash <span class="menu-flag hot">favorite</span></strong><span class="menu-price">$14</span><em>Crispy potatoes, two eggs, smoked sausage, pickled onion, herb crème fraîche</em></li>
+        <li class="reveal"><strong>Ricotta Toast</strong><span class="menu-price">$11</span><em>Sourdough, lemon ricotta, seasonal fruit, hot honey</em></li>
+        <li class="reveal"><strong>Buttermilk Pancakes</strong><span class="menu-price">$12</span><em>Stack of three, whipped maple butter</em></li>
+        <li class="reveal"><strong>The Wren Breakfast Sandwich</strong><span class="menu-price">$10.50</span><em>Folded egg, aged cheddar, garlic aioli, house English muffin — add bacon +$3</em></li>
+        <li class="reveal"><strong>Shakshuka <span class="menu-flag">v</span></strong><span class="menu-price">$13</span><em>Two eggs baked in spiced tomato, feta, grilled sourdough</em></li>
+        <li class="reveal"><strong>Granola Bowl <span class="menu-flag">v</span></strong><span class="menu-price">$9</span><em>House granola, yogurt, honey, whatever fruit looked best this morning</em></li>
+      </ul>
+    </section>
+
+    <section class="menu-section" id="menu-pastry">
+      <h2 class="reveal">From the Pastry Case</h2>
+      <p class="menu-note reveal">Baked from 4am. When they're gone, they're gone — usually by ten.</p>
+      <ul class="menu-list">
+        <li class="reveal"><strong>Cardamom Cinnamon Roll <span class="menu-flag hot">sells out</span></strong><span class="menu-price">$5.50</span><em>Overnight dough, brown-butter glaze, out at 9 sharp</em></li>
+        <li class="reveal"><strong>Morning Bun</strong><span class="menu-price">$4.75</span><em>Croissant dough, orange sugar</em></li>
+        <li class="reveal"><strong>Seasonal Scone</strong><span class="menu-price">$4.50</span><em>Ask what's in it — changes weekly</em></li>
+        <li class="reveal"><strong>Banana Bread (griddled, salted butter)</strong><span class="menu-price">$5</span><em>Trust us on the griddled part</em></li>
+        <li class="reveal"><strong>Whole Sourdough Loaf</strong><span class="menu-price">$9</span><em>Reserve ahead — Fridays &amp; Saturdays only</em></li>
+      </ul>
+    </section>
+
+    <section class="visit">
+      <div class="visit-card reveal">
+        <h2>Kitchen closes at 2:30.</h2>
+        <div class="visit-grid">
+          <div><h4>Hours</h4><p>Every day · 7am – 3pm</p></div>
+          <div><h4>Find us</h4><p>183 Main Street<br>Stoughton, WI 53589</p></div>
+          <div><h4>Say hello</h4><p><a href="tel:+16085550196">(608) 555-0196</a></p></div>
+        </div>
+        <p class="visit-note">Gluten-free and dairy-free options marked in-store. We can't promise the cinnamon rolls will still be there. We're sorry. Sort of.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> The Wren Café · Stoughton, WI</p>
+    <p class="footer-fine">A demonstration website by <a href="https://refreshweb.io">RefreshWeb</a>.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
