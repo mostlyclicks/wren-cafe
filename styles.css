@@ -13,6 +13,15 @@
   --ink:        #4A3A2F;
   --ink-soft:   #8A7767;
   --line:       rgba(62, 44, 34, 0.15);
+
+  /* Semantic status tokens — derived from the site's own palette so
+     alerts/success/error states stay on-brand instead of using generic
+     red/green/yellow. */
+  --success: var(--sage);     /* existing muted sage green */
+  --warning: var(--terra-soft); /* existing pale peach, soft warning tone */
+  --error:   #A85A3A;         /* deeper terracotta, distinct from decorative --terracotta */
+  --info:    var(--terra-soft);
+
   --font-display: "Young Serif", Georgia, serif;
   --font-body:    "Figtree", -apple-system, sans-serif;
 }
