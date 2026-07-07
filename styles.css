@@ -32,13 +32,20 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 400; color: var(--es
 a { color: inherit; }
 
 /* ————— Header ————— */
+/* backdrop-filter lives on ::before (a sibling of .site-nav in the box
+   tree), NOT on .site-header itself — putting it on the header would make
+   the header the containing block for its fixed-position .site-nav child
+   on mobile, collapsing the full-screen menu to the header's own height. */
 .site-header {
   position: sticky; top: 0; z-index: 40;
   display: flex; align-items: center; justify-content: space-between;
   padding: 16px clamp(20px, 5vw, 60px);
+  border-bottom: 2px dashed var(--line);
+}
+.site-header::before {
+  content: ""; position: absolute; inset: 0; z-index: -1;
   background: color-mix(in srgb, var(--butter) 90%, transparent);
   backdrop-filter: blur(10px);
-  border-bottom: 2px dashed var(--line);
 }
 
 .brand {
@@ -269,7 +276,7 @@ a { color: inherit; }
   .story-art { max-width: 250px; margin: 0 auto; }
 
   .site-nav {
-    position: fixed; inset: 66px 0 auto 0; z-index: 39;
+    position: fixed; inset: 66px 0 0 0; z-index: 39; overflow-y: auto;
     flex-direction: column; align-items: stretch; gap: 0;
     background: var(--butter); border-bottom: 2px dashed var(--line);
     display: none; padding: 8px 20px 20px;
